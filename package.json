@@ -5,6 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "nodemon app.js",
+    "build": "npm install --production && npm audit fix",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
