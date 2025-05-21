@@ -5,7 +5,9 @@ import Authentication from "./routes/Authentication.js";
 import { redirectFromShortUrl } from "./controller/shortUrl.controller.js";
 import cors from "cors";
 const app = express();
-app.use(cors());
+app.use(cors({
+  origin: 'https://urlshortner-ten-wine.vercel.app' // Replace with your actual domain
+}));
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
